@@ -2,7 +2,7 @@ package ru.sbrf.Data.support;
 
 /**
  * Объект в гриде.
- * В некотором смысле ColumnFamily.
+ * В некотором смысле row of ColumnFamily.
  */
 public class DbAggregate {
 
@@ -17,6 +17,10 @@ public class DbAggregate {
     //
     // работа с прокси объектами
     //
+    <T>
+    T adopt() {
+        return null;
+    }
 
     //
     // схема
