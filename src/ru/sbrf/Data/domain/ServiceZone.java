@@ -1,9 +1,21 @@
 package ru.sbrf.Data.domain;
 
-/**
- * Created by alexb_vi324bx on 28.05.2016.
- */
-//@Aggregate, @AggregateRoot
-public class ServiceZone {
+import ru.sbrf.Data.support.*;
 
+/**
+ * пример автосгенерированного класса
+ */
+@Aggregate
+@KeySpaceRoot
+public interface ServiceZone {
+
+    String Name = null;
+    int Status = 0;
+
+    // clients
+
+
+    // serving hosts
+
+    // other info
 }
