@@ -2,20 +2,25 @@ package ru.sbrf.Data.domain;
 
 import ru.sbrf.Data.support.*;
 
+import java.util.List;
+
 /**
  * пример автосгенерированного класса
  */
 @Aggregate
 @KeySpaceRoot
-public interface ServiceZone {
+public class ServiceZone {
 
     String Name = null;
     int Status = 0;
 
+    //
     // clients
+    //
+    List< Party > Parties = null;
 
-
-    // serving hosts
-
-    // other info
+    /** TODO
+     * serving hosts
+     * other info
+     */
 }

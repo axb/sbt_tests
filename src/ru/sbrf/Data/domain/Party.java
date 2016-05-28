@@ -1,10 +1,17 @@
 package ru.sbrf.Data.domain;
 
 import ru.sbrf.Data.support.Aggregate;
+import ru.sbrf.Data.support.Versioned;
+
+import java.util.List;
 
 /**
- * Created by alexb_vi324bx on 28.05.2016.
+ *
  */
 @Aggregate
-public interface Party {
+@Versioned
+public class Party {
+    public String Name = null;
+
+    public List< Agreement > Agreements = null;
 }
